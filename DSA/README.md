@@ -74,14 +74,14 @@
   
 7.  **Find Missing Number in Array**
 
-   #### Bruteforce Approach
-   - **Method: Iterate through numbers from 1 to N.For each number, check if it exists in the array.Return the number if not found.
-   - **Time Complexity**: O(N^2)
-   - **Space Complexity**: O(1)
+    #### Bruteforce Approach
+    - **Method: Iterate through numbers from 1 to N.For each number, check if it exists in the array.Return the number if not found.
+    - **Time Complexity**: O(N^2)
+    - **Space Complexity**: O(1)
 
-   #### Optimized Approach
-   - **Method: Calculate the expected sum of numbers from 1 to N using the formula \( \text{expectedSum} = \frac{N \times (N + 1)}{2} \).Calculate the actual sum of elements in the array.The missing number is \( \text{expectedSum} - \text{actualSum} \).
-   - **Time Complexity**: O(N)
-   - **Space Complexity**: O(1)
+    #### Optimized Approach
+    - **Method: Calculate the expected sum of numbers from 1 to N using the formula \( \text{expectedSum} = \frac{N \times (N + 1)}{2} \).Calculate the actual sum of elements in the array.The missing number is \( \text{expectedSum} - \text{actualSum} \).
+    - **Time Complexity**: O(N)
+    - **Space Complexity**: O(1)
 
    
