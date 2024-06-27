@@ -68,32 +68,32 @@
 6. **Union of Sorted Arrays**
 
    #### Approach
-   - **Method: Use a `TreeSet` to store elements from both arrays, ensuring all elements are unique and sorted automatically.Iterate through both arrays to add elements to the `TreeSet`.Convert the `TreeSet` back to an array to get the union of the two sorted arrays.
+   - **Method**: Use a `TreeSet` to store elements from both arrays, ensuring all elements are unique and sorted automatically.Iterate through both arrays to add elements to the `TreeSet`.Convert the `TreeSet` back to an array to get the union of the two sorted arrays.
    - **Time Complexity**: O(N log N) (due to TreeSet operations)
    - **Space Complexity**: O(N)
   
 7.  **Find Missing Number in Array**
 
     #### Bruteforce Approach
-    - **Method: Iterate through numbers from 1 to N.For each number, check if it exists in the array.Return the number if not found.
+    - **Method**: Iterate through numbers from 1 to N.For each number, check if it exists in the array.Return the number if not found.
     - **Time Complexity**: O(N^2)
     - **Space Complexity**: O(1)
 
     #### Optimized Approach
-    - **Method: Calculate the expected sum of numbers from 1 to N using the formula \( \text{expectedSum} = \frac{N \times (N + 1)}{2} \).Calculate the actual sum of elements in the array.The missing number is \( \text{expectedSum} - \text{actualSum} \).
+    - **Method**: Calculate the expected sum of numbers from 1 to N using the formula \( \text{expectedSum} = \frac{N \times (N + 1)}{2} \).Calculate the actual sum of elements in the array.The missing number is \( \text{expectedSum} - \text{actualSum} \).
     - **Time Complexity**: O(N)
     - **Space Complexity**: O(1)
 
-8.  **Next Permutation
-    ### Bruteforce Approach
-    - **Approach
+8.  **Next Permutation**
+    #### Bruteforce Approach
+    - **Approach**
     - Find all possible permutations of elements present and store them.
     - Search input from all possible permutations.
     - Print the next permutation present right after it.
     - **Time Complexity**: O(N! * N)
     - **Space Complexity**: O(1)
-    ### Optimized Approach
-    - **Approach
+    #### Optimized Approach
+    - **Approach**
     - Finding the Break Point: The first for loop finds the first index ind from the end where nums[ind] < nums[ind + 1].
     - Reverse Check: If no such index exists (ind is -1), the array is the highest permutation. Thus, we reverse the entire array to get the smallest permutation.
     - Swapping Elements: The second for loop finds the smallest number larger than nums[ind] from the end of the array and swaps them.
