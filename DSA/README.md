@@ -84,4 +84,19 @@
     - **Time Complexity**: O(N)
     - **Space Complexity**: O(1)
 
-   
+8.  **Next Permutation
+    ### Bruteforce Approach
+    - **Approach
+    - Find all possible permutations of elements present and store them.
+    - Search input from all possible permutations.
+    - Print the next permutation present right after it.
+    - **Time Complexity**: O(N! * N)
+    - **Space Complexity**: O(1)
+    ### Optimized Approach
+    - **Approach
+    - Finding the Break Point: The first for loop finds the first index ind from the end where nums[ind] < nums[ind + 1].
+    - Reverse Check: If no such index exists (ind is -1), the array is the highest permutation. Thus, we reverse the entire array to get the smallest permutation.
+    - Swapping Elements: The second for loop finds the smallest number larger than nums[ind] from the end of the array and swaps them.
+    - Reverse the Right Half: The reverse method is used to reverse the elements to the right of the ind index to get the next permutation.
+    - **Time Complexity**: O(N)
+    - **Space Complexity**: O(1)
